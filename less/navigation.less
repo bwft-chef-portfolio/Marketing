@@ -1,44 +1,100 @@
 // Navigation Styles here
+header{
+    display:flex;
+    flex-wrap: wrap;
 
-// .nav-header{
-//     display:flex;
-//     flex-wrap: wrap;
-//     margin:3% auto;
-//     justify-content: space-between;
+    .header-pics{
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
 
-//     @media @mod{
-//       flex-direction:column;
-//     }
 
-//     .div-head{
-//         width:20%;
+        .pic-header{
+            height:20vh;
+            width: 20%;
+        }
+    }
+}
 
-//         @media @mod{
-//           width:100%;
-//           display:flex;
-//           justify-content: center;
-//           margin-bottom: 2%;
-//         }
-//     }
+
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background: #333333;
+    color:white;
+
+    .icons{
+       display:flex;
+       justify-content: space-around;
+       align-items: center;
+        width: 40%;
     
-//     nav {
-//       width:40%;
-//       display: flex;
-//       align-items: center;
-//       justify-content: space-between;
 
-//       @media @mod{
-//         width:100%;
-//         justify-content: center;
-//         justify-content: space-around;
+    .social{
+        width:15%;
+       
+    }
+}
+
+.social-names{
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+    
+    h2{
+        font-size:2.5rem;
         
-//       }
-//     }
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    a:hover{
+        transition: .5s ease;
+        color:red;
+    }
+}
 
-//     nav a{
-//         font-size:1.6rem;
-//         text-decoration:none;
-//         color:black;
-//         font-weight: bold;
-//     }
-//   }
+.button-logo{
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    width:30%;
+    
+    
+}
+
+
+.button1{
+    .buttons(12px; white);
+        width:115%;
+        padding: 8%;
+        font-size:1.2rem;
+        text-align: center;
+        color:black;
+        margin-top:12%;
+        
+        a{
+            text-decoration: none;
+        }
+}
+
+
+.title{
+    width: 10%;
+    margin:auto 4%;
+  
+}
+.nav-logo{
+    margin-left:40%;
+    width:40%;
+    height:6vh;
+    background-size: cover;
+
+}
+
+}
