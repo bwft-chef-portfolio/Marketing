@@ -136,6 +136,12 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
 h2,
 h3,
 h4,
@@ -193,7 +199,7 @@ header .header-pics .pic-header {
   width: 15%;
 }
 .navbar .icons .social-names h2 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
 }
 .navbar .icons .social-names a {
   text-decoration: none;
@@ -205,6 +211,7 @@ header .header-pics .pic-header {
 }
 .navbar .title {
   width: 10%;
+  padding-left: 2%;
   margin: auto 4%;
 }
 .navbar .button-logo {
@@ -213,28 +220,65 @@ header .header-pics .pic-header {
   align-items: center;
   width: 30%;
 }
-.navbar .button-logo .button1 {
-  border-radius: 12px;
-  background: white;
-  color: white;
-  padding: 4% 24%;
-  width: 125%;
-  padding: 8%;
-  font-size: 1.2rem;
-  text-align: center;
-  color: black;
-}
-.navbar .button-logo .button1 a {
-  text-decoration: none;
-}
 .navbar .button-logo .nav-logo {
   margin-left: 40%;
   width: 40%;
   height: 6vh;
   background-size: cover;
 }
-.container-div {
-  background-image: url("../img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+.body .callToAction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  background-color: rgba(29, 19, 19, 0.5);
+}
+.body .callToAction .button1 {
+  display: flex;
+  width: 100%;
+  padding-left: 20%;
+  padding-top: 15%;
+}
+.body .callToAction .button1 a {
+  width: 100%;
+}
+.body .callToAction .button1 a .buttons {
+  border-radius: 24px;
+  background: rgba(178, 180, 185, 0.616);
+  color: white;
+  padding: 4% 24%;
+  width: 80%;
+  text-shadow: 4px 3px #2c2323;
+}
+.body .callToAction .button1 a .buttons h1 {
+  width: 100%;
+  font-size: 2.8rem;
+}
+.body .callToAction .button2 {
+  display: flex;
+  width: 100%;
+  padding-left: 20%;
+  padding-top: 30%;
+}
+.body .callToAction .button2 a {
+  width: 100%;
+}
+.body .callToAction .button2 a .buttons {
+  border-radius: 24px;
+  background: rgba(178, 180, 185, 0.616);
+  color: white;
+  padding: 4% 24%;
+  width: 80%;
+  text-shadow: 4px 3px #2c2323;
+}
+.body .callToAction .button2 a .buttons h1 {
+  width: 100%;
+  font-size: 2.6rem;
 }
