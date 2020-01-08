@@ -137,10 +137,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background-image: url("../img/background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
+  background-attachment: fixed;
 }
 h2,
 h3,
@@ -192,7 +193,6 @@ header .header-pics .pic-header {
 }
 .navbar .icons .social-names {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .navbar .icons .social-names .social {
@@ -222,8 +222,6 @@ header .header-pics .pic-header {
 }
 .navbar .button-logo .nav-logo {
   margin-left: 40%;
-  width: 40%;
-  height: 6vh;
   background-size: cover;
 }
 .body {
@@ -255,11 +253,17 @@ header .header-pics .pic-header {
   color: white;
   padding: 4% 24%;
   width: 80%;
-  text-shadow: 4px 3px #2c2323;
+  text-shadow: 3px 3px #2c2323;
 }
 .body .callToAction .button1 a .buttons h1 {
   width: 100%;
   font-size: 2.8rem;
+}
+.body .callToAction .button1 a .buttons:hover {
+  transition: 0.5s ease;
+  background: #333333;
+  text-shadow: none;
+  border-radius: 12px;
 }
 .body .callToAction .button2 {
   display: flex;
@@ -276,9 +280,15 @@ header .header-pics .pic-header {
   color: white;
   padding: 4% 24%;
   width: 80%;
-  text-shadow: 4px 3px #2c2323;
+  text-shadow: 3px 3px #2c2323;
 }
 .body .callToAction .button2 a .buttons h1 {
   width: 100%;
   font-size: 2.6rem;
+}
+.body .callToAction .button2 a .buttons:hover {
+  transition: 0.5s ease;
+  background: #333333;
+  text-shadow: none;
+  border-radius: 12px;
 }
