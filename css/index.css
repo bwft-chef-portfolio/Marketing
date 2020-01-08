@@ -178,12 +178,30 @@ header .header-pics .pic-header {
   height: 20vh;
   width: 20%;
 }
+@media (max-width: 500px) {
+  header .header-pics .pic-header {
+    width: 25%;
+  }
+}
+@media (max-width: 500px) {
+  header .header-pics .burger {
+    display: none;
+  }
+}
 .navbar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   background: #333333;
   color: white;
+}
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+  }
 }
 .navbar .icons {
   display: flex;
@@ -209,10 +227,22 @@ header .header-pics .pic-header {
   transition: 0.5s ease;
   color: red;
 }
+@media (max-width: 500px) {
+  .navbar .icons {
+    display: none;
+  }
+}
 .navbar .title {
   width: 10%;
   padding-left: 2%;
   margin: auto 4%;
+}
+@media (max-width: 500px) {
+  .navbar .title {
+    padding: none;
+    margin-right: 28%;
+    padding-bottom: 2%;
+  }
 }
 .navbar .button-logo {
   display: flex;
@@ -220,9 +250,20 @@ header .header-pics .pic-header {
   align-items: center;
   width: 30%;
 }
+@media (max-width: 500px) {
+  .navbar .button-logo {
+    width: 100%;
+  }
+}
 .navbar .button-logo .nav-logo {
   margin-left: 40%;
-  background-size: cover;
+  width: 27%;
+}
+@media (max-width: 500px) {
+  .navbar .button-logo .nav-logo {
+    margin-left: 30%;
+    width: 40%;
+  }
 }
 .body {
   width: 100%;
@@ -237,6 +278,12 @@ header .header-pics .pic-header {
   align-items: center;
   width: 40%;
   background-color: rgba(29, 19, 19, 0.5);
+}
+@media (max-width: 500px) {
+  .body .callToAction {
+    width: 80%;
+    background-color: rgba(29, 19, 19, 0);
+  }
 }
 .body .callToAction .button1 {
   display: flex;
