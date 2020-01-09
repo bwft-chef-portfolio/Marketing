@@ -140,7 +140,6 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
   background-attachment: fixed;
 }
 h2,
@@ -164,6 +163,9 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+}
+a {
+  text-decoration: none;
 }
 header {
   display: flex;
@@ -243,6 +245,13 @@ header .header-pics .pic-header {
     margin-right: 28%;
     padding-bottom: 2%;
   }
+}
+.navbar .title a {
+  color: white;
+}
+.navbar .title a:hover {
+  transition: 0.5s ease;
+  color: red;
 }
 .navbar .button-logo {
   display: flex;
@@ -338,4 +347,82 @@ header .header-pics .pic-header {
   background: #333333;
   text-shadow: none;
   border-radius: 12px;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.team h2 {
+  color: white;
+}
+.team .container {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+.team .team-lead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+.team .profile {
+  width: 50%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .team .tuck {
+    width: 30%;
+  }
+}
+.team .front-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team .front-end .developers {
+  display: flex;
+}
+.team .front-end .developers a {
+  display: flex;
+}
+.team .front-end .developers .ethan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid white;
+  justify-content: flex-end;
+}
+.team .front-end .developers .jacob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+.team .front-end .developers .celestia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-right: 1px solid white;
+}
+.team .back-end {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team .marketing {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .team h2 {
+    font-size: 1.4rem;
+  }
 }
